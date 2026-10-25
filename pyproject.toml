@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jntread"
+version = "1.0.0"
+description = "Reader and format documentation for Windows Journal .jnt/.jtp files"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[project.scripts]
+jntread = "jntread.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

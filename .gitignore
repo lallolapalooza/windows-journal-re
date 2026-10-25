@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+out/
+extracted/
+tools/
+samples/
+tests/golden/
+*.log
